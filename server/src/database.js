@@ -6,7 +6,6 @@ const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_KEY;  
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
-console.log(process.env.DATABASE_URL);
 const prisma = new PrismaClient({
   // Configuração de conexão com o banco de dados
   datasources: {

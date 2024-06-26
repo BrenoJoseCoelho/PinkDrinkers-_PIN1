@@ -17,7 +17,6 @@ exports.createFuncionario = async (req, res) => {
       throw Error('Erro ao Criar Funcionario!')
     }
   } catch (error) {
-    console.log(error);
     res.status(500).json({ message: error.message });
   }
 };
@@ -36,7 +35,6 @@ exports.updateFuncionario = async (req, res) => {
       throw Error('Erro ao editar Funcionario!')
     }
   } catch (error) {
-    console.log(error);
     res.status(500).json({ message: error.message });
   }
 };
@@ -53,7 +51,6 @@ exports.selectFuncionario = async (req, res) => {
       throw Error('Nenhum funcionário encontrado!');
     }
   } catch (error) {
-    console.log(error);
     res.status(500).json({ message: error.message });
   }
 };
@@ -70,7 +67,6 @@ exports.funcionarioById = async (req, res) => {
           throw Error('Não encontrado dados!')
       }
   } catch (error) {
-      console.log(error);
       res.status(500).json({ message: error.message });
   }
 

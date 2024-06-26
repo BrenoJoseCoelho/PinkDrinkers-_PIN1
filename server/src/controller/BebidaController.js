@@ -14,7 +14,6 @@ exports.createBebida = async (req, res) => {
       throw new Error('Erro ao criar bebida!');
     }
   } catch (error) {
-    console.log(error);
     res.status(500).json({ message: error.message });
   }
 };
@@ -33,7 +32,6 @@ exports.updateBebida = async (req, res) => {
       throw new Error('Erro ao atualizar bebida!');
     }
   } catch (error) {
-    console.log(error);
     res.status(500).json({ message: error.message });
   }
 };
@@ -52,7 +50,6 @@ exports.selectBebida = async (req, res) => {
       throw new Error('Bebida não encontrada!');
     }
   } catch (error) {
-    console.log(error);
     res.status(500).json({ message: error.message });
   }
 };

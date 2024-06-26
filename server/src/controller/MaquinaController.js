@@ -18,7 +18,6 @@ exports.createMaquina = async (req, res) => {
     throw Error('Erro ao Criar Maquina!')
   }
 } catch (error) {
-  console.log(error);
   res.status(500).json({ message: error.message });
 }
 };
@@ -37,7 +36,6 @@ exports.updateMaquina = async (req, res) => {
       throw Error('Erro ao editar Maquina!')
     }
   } catch (error) {
-    console.log(error);
     res.status(500).json({ message: error.message });
   }
   };
@@ -55,7 +53,6 @@ exports.updateMaquina = async (req, res) => {
             throw Error('Não encontrado dados!')
         }
     } catch (error) {
-        console.log(error);
         res.status(500).json({ message: error.message });
     }
   };
@@ -72,7 +69,6 @@ exports.updateMaquina = async (req, res) => {
             throw Error('Não encontrado dados!')
         }
     } catch (error) {
-        console.log(error);
         res.status(500).json({ message: error.message });
     }
 
